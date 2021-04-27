@@ -1,0 +1,226 @@
+/* Css Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}   
+
+/* Body section */
+body{
+    font-size: 62.5%;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(2,0,36);
+
+}
+
+/* header section */
+header{
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    background-color: rgb(255, 255, 255);
+   position: fixed;
+   width: 100%;
+   z-index: 2;
+
+}
+
+
+/* navBar */
+.nav-Bar{
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Logo Section */
+
+
+.logo img{
+    height: 40px;
+}
+
+
+/* Form Section */
+form input{
+    padding: 10px 20px;
+    border-radius: 20px;
+    outline: none;
+}
+
+
+
+
+/* Main section */
+main{
+    padding-top: 4rem;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.movie{
+   width: 20%;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    margin: 1rem;
+    position: relative;
+
+}
+
+.movie-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.movie-info h3{
+    font-size: 1rem;
+    color: white;
+    padding-top: 1rem;
+}
+
+.movie-info span{
+    color: white;
+    font-size: 1.2rem;
+    background-color: #22254B;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+
+/* movie info vote class */
+.movie-info span.green{
+    color: green;
+}
+
+.movie-info span.red{
+    color: red;
+}
+
+.movie-info span.orange{
+    color: red;
+}
+
+/* movie banner image  */
+.movie img{
+    width: 100%;
+}
+
+
+.overview {
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    overflow-y: auto; 
+    display: none;
+    transition: 2s;
+  }
+
+.movie:hover .overview{
+    position: absolute;
+    transform: translateY(0);
+    display: block;
+    bottom: 0;
+   
+}
+
+footer{
+    background-color: rgb(253, 253, 253);
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.foot{
+    width: 20%;
+}
+
+.foot p{
+    padding-top: 0.6rem;
+    font-size: 0.9rem;
+
+    
+}
+
+.foot2 a {
+    text-decoration: none;
+   
+   
+}
+
+.foot2 a:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.foot2{
+    text-align: center;
+}
+.foot2 i{
+   padding: 0.5rem;
+    font-size: 2rem;
+}
+
+footer img{
+    height: 20px;
+    
+}
+
+footer .links{
+    text-align: center;
+} 
+
+footer .links a{
+    display: block;
+    padding: 0.2rem;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;   
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .logo img{
+
+        height: 20px;
+    }
+
+    main{
+        display: block;
+        padding-top: 5rem;
+    } 
+
+    .movie{
+        width: auto;
+    }
+
+    footer{
+        text-align: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .foot{
+        width: 60%;
+        line-height: 1.2rem;
+    } 
+
+
+    
+}
+
+
